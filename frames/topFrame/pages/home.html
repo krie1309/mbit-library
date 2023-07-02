@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/8ff0474a6b.js" crossorigin="anonymous"></script>
+        <title>Home Page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+                overflow: hidden;
+            }
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .con {
+                border: 3px solid #f1f1f1;
+                color: black;
+			    background-color: skyblue;
+			    border-radius: 30px;
+                margin-top: 30px;
+                padding-bottom: 30px;
+                display: inline-block;
+                width: 50%;
+                height: 50%;
+            }
+            .cont {
+                height: 30%;
+                width: 99%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                float: right;
+            }
+            .cont ul {
+                list-style: none;
+                height: 30px;
+                border-radius: 8px;
+                margin-top: 90px;
+                margin-bottom: 30px;
+                margin-left: -21px;
+            }
+            .cont ul li {
+                display: inline-block;
+                background: rgb(210, 220, 224);
+                margin: 0px 35px 0px 2px;
+                border-radius: 8px;
+                width: 129.83;
+            }
+            .cont ul li a {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+                text-transform: uppercase;
+                
+            }
+            .cont ul li a:visited {
+                text-decoration: none;
+            }
+            .cont ul li a:hover {
+                background-color: #156ee2;
+                border-radius: 8px;
+                color: white;
+            }
+            .cont ul li a:active {
+               background-color: #00ff40;
+               border-radius: 8px;
+               color: black;
+           }
+           .wid {
+               width: 200px;
+           }
+           
+           tr {
+               margin-top: 20px;
+               width: 100%;
+               padding-left: 23px;
+           }
+           td {
+               border-radius: 8px;
+               margin: 0px 57px;
+           }
+           tr, td {
+               margin-left: 2px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           }
+           a {
+               text-decoration: none;
+               line-height: 40px;
+               color: black;
+           }
+           .fab {
+               color: black;
+               font-size: 40px;
+           }
+           label {
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               margin-bottom: -15px;
+               margin-top: 135px;
+           }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="con" width="50%">
+                <div class="cont">
+                    <ul>
+                        <li><a class="selected" href="login.html" target="right">Login</a></li>
+                    </ul>
+                </div>
+                <table width=100%>
+                    <tr>
+                        <label for="" align="center">Or Sign up using: </label>
+                        <td><a href="#"><i class="fab fa-google"></i></a></td>
+                        <td><a href="#"><i class="fab fa-facebook"></i></a></td>
+                        <td><a href="#"><i class="fab fa-twitter"></i></a></td>
+                        <td><a href="#"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Cart Page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+                /* overflow: hidden; */
+            }
+            .cont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+                flex-direction: column;
+            }
+            table {
+                width: 90%;
+                border-collapse: separate;
+                background-color: skyblue;
+			    border-radius: 30px;
+                border: 3px solid #f1f1f1;
+                margin-bottom: 20px;
+                margin-left: 25px;
+            }
+            tr, td {
+                text-align: center;
+                
+            }
+            td, th {
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                width: 200px;
+            }
+            td:first-child, th:first-child {
+                border-left: none;
+            }
+            img {
+                margin: 10px 0px;
+                height: 150px;
+            }
+            .book {
+                margin-top: 50px;
+                padding-top: 20px;
+                font-variant-caps: small-caps;
+            }
+            th {
+                padding: 15px 0px;
+                border-top: none;
+            }
+            button {
+                height: 30px;
+                width: 103px;
+                margin-bottom: 5px;
+                background: rgb(255, 65, 65);
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-variant-caps: small-caps;
+                border-radius: 5px;
+            }
+            button:hover {
+                opacity: 0.9;
+            }
+            .con {
+                width: 100%;
+            }
+            table.total {
+                width: 461px;
+                height: 48px;
+                float: right;
+                margin-right: 30px;
+                margin-bottom: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cont">
+            <table>
+                <tr class="book">
+                    <th>Book Image</th>
+                    <th>Subject</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/ec math.jpg" alt=""></td>
+                    <td><b>Mathematics</b></td>
+                    <td><b>1</b></td>
+                    <td><b>&#8377; 455</b></td>
+                    <td><b>&#8377; 455</b></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/wd.jpg" alt=""></td>
+                    <td><b>Web Development</b></td>
+                    <td><b>3</b></td>
+                    <td><b>&#8377; 450</b></td>
+                    <td><b>&#8377; 1350</b></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/osv.jpg" alt=""></td>
+                    <td><b>Operting System & Virtualization</b></td>
+                    <td><b>2</b></td>
+                    <td><b>&#8377; 400</b></td>
+                    <td><b>&#8377; 800</b></td>
+                </tr>
+            </table>
+            <div class="con">
+                <table class="total">
+                    <tr>
+                        <th><b>Total Amount</b></th>
+                        <th><b>&#8377; 2650</b></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- <script>
+            let btn = document.querySelector('button');
+            btn.addEventListener('click', () => {
+                if(btn.innerText == 'Add to Cart')
+                    btn.innerText = 'Added';
+                
+                else 
+                    btn.innerText = 'Add to Cart';
+            
+            });
+        </script> -->
+    </body>
+</html>

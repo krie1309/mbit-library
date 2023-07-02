@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Catalogue Page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+                /* overflow: hidden; */
+            }
+            .cont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            table {
+                width: 90%;
+                border-collapse: separate;
+                background-color: skyblue;
+			    border-radius: 30px;
+                border: 3px solid #f1f1f1;
+                margin-bottom: 40px;
+                margin-left: 25px;
+            }
+            tr, td {
+                text-align: center;
+                
+            }
+            td, th {
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                width: 200px;
+            }
+            td:first-child, th:first-child {
+                border-left: none;
+            }
+            img {
+                margin: 10px 0px;
+                height: 150px;
+            }
+            .book {
+                margin-top: 50px;
+                padding-top: 20px;
+                font-variant-caps: small-caps;
+            }
+            th {
+                padding: 15px 0px;
+                border-top: none;
+            }
+            button {
+                height: 30px;
+                width: 103px;
+                margin-bottom: 5px;
+                background: rgb(255, 65, 65);
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-variant-caps: small-caps;
+                border-radius: 5px;
+            }
+            button:hover {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cont">
+            <table>
+                <tr class="book">
+                    <th>Book Image</th>
+                    <th>Subject</th>
+                    <th>Publisher</th>
+                    <th>Price</th>
+                    <th>To Purchase Add it to Cart</th>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/oop(java).jpg" alt=""></td>
+                    <td><b>OOP with JAVA</b></td>
+                    <td><b>MBIT</b></td>
+                    <td><b>&#8377; 650</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/dbms.jpg" alt=""></td>
+                    <td><b>Database Management System</b></td>
+                    <td><b>GCET</b></td>
+                    <td><b>&#8377; 555</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/se.jpg" alt=""></td>
+                    <td><b>Software Engineer</b></td>
+                    <td><b>MBIT</b></td>
+                    <td><b>&#8377; 765</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/os.jpg" alt=""></td>
+                    <td><b>Operting System</b></td>
+                    <td><b>CVM</b></td>
+                    <td><b>&#8377; 450</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/cs.jpg" alt=""></td>
+                    <td><b>Cyber Security</b></td>
+                    <td><b>GCET</b></td>
+                    <td><b>&#8377; 500</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr class="book">
+                    <td><img src="../../../pictures/cn.jpg" alt=""></td>
+                    <td><b>Computer Networks</b></td>
+                    <td><b>ADIT</b></td>
+                    <td><b>&#8377; 600</b></td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+        <!-- <script>
+            let btn = document.querySelector('button');
+            btn.addEventListener('click', () => {
+                if(btn.innerText == 'Add to Cart')
+                    btn.innerText = 'Added';
+                
+                else 
+                    btn.innerText = 'Add to Cart';
+            
+            });
+        </script> -->
+    </body>
+</html>

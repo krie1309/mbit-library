@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+            }
+            .cont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            form {
+			    border: 3px solid #f1f1f1;
+                color: black;
+			    background-color: skyblue;
+			    border-radius: 30px;
+                margin-top: 30px;
+                width: 50%;
+		    }
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13.3px;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            #button, a, .cancelbtn {
+                background-color: rgb(212, 147, 26);
+                color: white;
+                height:35px;
+                width: 70px;
+                border-radius: 25px;
+                border: none;
+                cursor: pointer;
+            }
+            .buttons {
+                word-spacing: 35px;
+          }
+            input {
+                border-radius: 5px;
+            }
+            input.spc, select {
+                padding-left: 7px;
+                height: 30px;
+                width: 163px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1 align="center" style="color: rgb(40, 57, 58); font:courier;">REGISTRATION FORM</h1> -->
+        <div class="cont">
+            <form align="center" action="#">            
+            <table align="center" cellspacing="25" width= 400px>          
+                <tr>
+                    <td>Full Name</td> 
+                    <td>
+                        <input class="spc" type="text" placeholder="Full Name" size="20" required>
+                    </td>
+                </tr>                
+                <tr>
+                    <td>Password</td> 
+                    <td>
+                        <input class="spc" type="password" placeholder="Password" size="20" required>
+                    </td>
+                </tr>               
+                <tr>
+                    <td>Email Address</td>
+                    <td>
+                        <input class="spc" type="email" placeholder="Email Address" size="20" required
+                    </td>
+                </tr>               
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>
+                        <input class="spc" type="numbers" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="21" required>
+                    </td>
+                </tr>              
+                <tr>
+                    <td>DOB</td>
+                    <td>
+                        <input type="date" class="spc" id="birthday" name="birthday">
+                    </td>
+                </tr>      
+                <tr>
+                    <td>Language Known</td> 
+                    <td>
+                        <input for="Language" type="checkbox" name="r1" id="english">
+                            <label for="english">English</label><br>
+                        <input for="Language" type="checkbox" name="r1" id="gujarati">
+                            <label for="gujarati">Gujarati</label><br>
+                        <input for="Language" type="checkbox" name="r1" id="hindi">
+                            <label for="hindi">Hindi</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea style="width: 163px;"> </textarea>
+                    </td>
+                </tr>      
+                <tr>
+                    <td>Gender</td>  
+                    <td style="width: 163px;">
+                        <input for="gender" type="radio" name="r1" id="male">
+                            <label for="male">Male</label>
+                        <input for="gender" type="radio" name="r1" id="female">
+                            <label for="female">Female</label>
+                    </td>
+                </tr>       
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value="anand" >Anand</option>
+                            <option value="petlad" >Petlad</option>
+                            <option value="karamsad" >Karamsad</option>
+                            <option value="vidhyanager" >Vidhyanager</option>
+                            <option value="none" >None</option>
+                        </select>
+                    </td>
+                </tr>               
+                <tr>
+                    <td>State</td>
+                    <td>
+                        <select name="state" id="state" value="state" style="width: 162px;">
+                            <option value="anand" >Gujarat</option>
+                            <option value="delhi" >Delhi</option>
+                            <option value="andhra pradesh" >Andhra ppadesh</option>
+                            <option value="haryana" >Haryana</option>
+                            <option value="none" >None</option>
+                    </td>
+                </tr>        
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country" id="country" value="country" style="width: 162px;">
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>England</option>
+                            <option>Australia</option>
+                            <option>None</option> 
+                        </select>    
+                    </td>
+                </tr>           
+                <tr>
+                    <td class="buttons" align="center" colspan="2">
+                        <a href="home.html"<button type="button" class="cancelbtn">Cancel</button></a>
+                        <input type="reset" value="Reset" id="button">
+                        <input type="submit" value="Submit" id="button">      
+                    </td>
+                </tr>       
+            </form>	
+        </div>
+    </body>
+</html>

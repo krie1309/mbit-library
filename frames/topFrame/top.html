@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css"/>
+	    <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	    </script>
+	    <script src=
+        "https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js">
+	    </script>
+	    <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+	    </script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+                overflow: hidden;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+            }
+            .container .label {
+                width: 80%;
+            }
+            .navbar {
+                text-decoration: none;
+                float: right;
+                width: 99%;
+            }
+            .navbar ul {
+                list-style: none;
+                height: 30px;
+                /* background: rgb(210, 220, 224); */
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+            .navbar ul li {
+                display: inline-block;
+                width: 17%;
+                text-align: center;
+                background: rgb(210, 220, 224);
+                margin: 0px 12px 0px 5px;
+                border-radius: 8px;
+            }
+            .navbar ul li a {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                line-height: 30px;
+                position: relative;
+            }
+            .navbar ul li a:visited {
+                text-decoration: none;
+            }
+            .navbar ul li a:hover {
+                background-color: #156ee2;
+                border-radius: 8px;
+                color: white;
+            }
+            .navbar ul li a:active {
+               background-color: #00ff40;
+               border-radius: 8px;
+               color: black;
+           }
+           .container .mbitlog img {
+                filter: brightness(120%) ;
+           }
+           .nav2>.active>a {
+               border-radius: 8px;
+               background-color: #19d1ff;
+           }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            $(document).ready(function() 
+            {
+                $('ul.nav2>li').click(function (e)
+                {
+                    $('ul.nav2>li').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+
+        <div class="container" style="margin: 0; width: 100%;">
+            <div class="mbitlog">
+                <img src="../../logos/MBIT_logo-removebg-preview.png" alt="" style="margin: 30px 0px 0px 50px; height: 100px;">
+            </div>
+            <div class="label" style="margin-top: 30px;">
+                <p align="center"> <b style="font-size: 28px;">MBIT Library, New Vallabh Vidhyanagar</b></p>
+                <div class="navbar" style="width: 99%;">
+                    <ul class="nav2">
+                        <li><a href="pages/home.html" target="right">Home</a></li>
+                        <li><a href="pages/login.html" target="right">Login</a></li>
+                        <li><a href="pages/registration.html" target="right">Registration</a></li>
+                        <li><a href="pages/catalogue.html" target="right">Catalogue</a></li>
+                        <li><a href="pages/cart.html" target="right">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(165, 183, 190);
+                /* overflow: hidden; */
+            }
+            .cont {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                height: 100px;
+            }
+            .image {
+                text-align: center;
+                margin: 24px 0px 12px 0px;
+            }
+            img.avtar {
+                border-radius: 50%;
+            }
+            form {
+                border: 3px solid #f1f1f1;
+                color: black;
+			    background-color: skyblue;
+			    border-radius: 30px;
+                margin-top: 30px;
+            }
+            #button {
+                background-color: rgb(212, 147, 26);
+                color: white;
+                height:35px;
+                width: 70px;
+                border-radius: 25px;
+            }
+            button {
+               background-color: #04aa6d;
+               color: white;
+               padding: 5px 5px;
+               border: none;
+               cursor: pointer;
+               border-radius: 8px;
+            }
+            button:hover {
+                opacity: 0.8;
+            }
+            .cancelbtn {
+                padding: 6px 21px;
+                border-radius: 5px;
+                background-color: #f44336;
+            }
+            input.full {
+                border-radius: 8px;
+                width: 100%;
+                padding: 3px 15px;
+            }
+            .mar {
+                display: inline-block;
+                margin-top: -20px;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cont">
+            <form action="login.html">
+                <div class="image">
+                    <img src="../../../pictures/avtar.png" alt="" class="avtar">
+                </div>
+                <table align="center" cellspacing="25" width= 400px>
+                    <tr>
+                        <td><label for="email">Email Address</label></td>
+                        <td>
+                            <input class="full" type="email" placeholder="Email Address"  name="email" size="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd">Password</label></td> 
+                        <td>
+                            <input class="full" type="password" placeholder="Password" size="20" name="pwd" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="buttons" align="center" colspan="2">
+                            <button type="submit" style="width: 100%; height: 150%;">Login</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mar" style="display: inline-block; width: 150px;">
+                            <input type="checkbox" checked="checked name=" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left"><a href="home.html"><button type="button" class="cancelbtn">Cancel</button></a></td>
+                        <td align="right"><span class="pwd"><a href="#">Forget Password?</a></span></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
